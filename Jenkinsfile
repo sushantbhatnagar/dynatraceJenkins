@@ -39,5 +39,8 @@ node {
 			]
 		}	
 	}
- 
+	
+	stage('PerformanceSignatureReports') {
+		perfSigDynatraceReports envId: 'Dynatrace', nonFunctionalFailure: 2, specFile: 'specfile.json'
+	} 
  }
