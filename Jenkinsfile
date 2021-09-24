@@ -7,23 +7,15 @@ node {
    }
    
    stage('Test') {
-	echo "Test Pass"
+	echo "Test in-progress"
    }
    
-   stage('createDynatraceDeploymentEvent') {   
-	createDynatraceDeploymentEvent(entityIds: [[$class: 'Service', entityId: 'SERVICE-C839DD873CDBD8A7']], envId: 'Dynatrace') {
-    // some block
+   stage('createDynatraceDeploymentEvent') {  
 	
-	tagMatchRules: [
-				[
-					meTypes: [[meType: 'SERVICE']],
-					tags: [
-					  [context: 'CONTEXTLESS', key: 'jenkins']
-					]
-				]
-			]	  
-		}
-    }
+	 createDynatraceDeploymentEvent(envId: 'Dynatrace', tagMatchRules: [[meTypes: [[meType: 'SERVICE']], tags: [[context: 'CONTEXTLESS', key: 'jenkins']]]]) {
+                    echo 'Testing Pass'
+                }	
+	}
 	
 	stage('recordDynatraceDeploymentEvent') {
 	recordDynatraceSession(entityIds: [[$class: 'Service', entityId: 'SERVICE-C839DD873CDBD8A7']], envId: 'Dynatrace', testCase: '') {
