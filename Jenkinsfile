@@ -24,5 +24,20 @@ node {
 			]	  
 		}
     }
+	
+	stage('recordDynatraceDeploymentEvent') {
+	recordDynatraceSession(entityIds: [[$class: 'Service', entityId: 'SERVICE-C839DD873CDBD8A7']], envId: 'Dynatrace', testCase: '') {
+    // some block
+
+	tagMatchRules: [
+				[
+					meTypes: [[meType: 'SERVICE']],
+					tags: [
+					  [context: 'CONTEXTLESS', key: 'jenkins']
+					]
+				]
+			]
+		}	
+	}
  
  }
