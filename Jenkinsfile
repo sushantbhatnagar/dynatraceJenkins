@@ -11,18 +11,18 @@ node {
    }
    
    stage('createDynatraceDeploymentEvent') {   
+	createDynatraceDeploymentEvent(entityIds: [[$class: 'Service', entityId: 'SERVICE-C839DD873CDBD8A7']], envId: 'Dynatrace') {
+    // some block
 	
-		createDynatraceDeploymentEvent(
-			envId: '5c27ebbb-fd99-4f71-a1b8-f67bc33efa9f',
-			"ciBackLink":"${BUILD_URL}",
-			tagMatchRules: [
+	tagMatchRules: [
 				[
 					meTypes: [[meType: 'SERVICE']],
 					tags: [
 					  [context: 'CONTEXTLESS', key: 'jenkins']
 					]
-				]	  
-		])
-   }
+				]
+			]	  
+		}
+    }
  
  }
