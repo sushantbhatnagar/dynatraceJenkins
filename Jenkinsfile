@@ -11,7 +11,7 @@ node {
    }
    
    stage('createDynatraceDeploymentEvent') {   
-	steps {
+	
 		createDynatraceDeploymentEvent(
 			envId: '5c27ebbb-fd99-4f71-a1b8-f67bc33efa9f',
 			"ciBackLink":"${BUILD_URL}",
@@ -23,7 +23,6 @@ node {
 					]
 				]	  
 		])
-     }
    }
  
  }
