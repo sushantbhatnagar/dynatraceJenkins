@@ -2,7 +2,7 @@
 	"spec_version": "2.0",
 	"timeseries": [
 		{
-			"timeseriesId": "builtin:service.responsetime",
+			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
 			"entityIds": "SERVICE-C839DD873CDBD8A7"
 		}	
