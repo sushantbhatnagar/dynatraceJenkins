@@ -3,6 +3,7 @@
 	"timeseries": [
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
+			"relativeTime": "hour",
 			"aggregation": "avg",
 			"entityIds": "SERVICE-C839DD873CDBD8A7"
 		}	
