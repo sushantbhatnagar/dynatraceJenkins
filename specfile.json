@@ -5,7 +5,7 @@
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"relativeTime": "hour",
 			"aggregation": "percentile",
-			"entityIds": "SERVICE-C839DD873CDBD8A7",
+			"tags": "jenkins",
 			"upperLimit": 1800000,
 			"lowerLimit": 1500000
 		}	
@@ -13,3 +13,4 @@
 
 
 }
+
