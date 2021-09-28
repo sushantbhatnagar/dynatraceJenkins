@@ -3,11 +3,10 @@
 	"timeseries": [
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
-			"relativeTime": "hour",
-			"aggregation": "percentile",
+			"aggregation": "avg",
 			"tags": "jenkins",
-			"upperLimit": 1800000,
-			"lowerLimit": 1500000
+			"upperLimit": 500000,
+			"lowerLimit": 1000000
 		}	
 	]
 
