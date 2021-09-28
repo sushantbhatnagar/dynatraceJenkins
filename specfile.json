@@ -3,22 +3,13 @@
 	"timeseries": [{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"tags": "jenkins",
-			"upperWarning": 5000,
-			"upperSevere": 10000
+			"tags": "jenkins"
 		},
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"entityIds": "SERVICE-C839DD873CDBD8A7",
-			"upperWarning": 5000,
-			"upperSevere": 8000
-		},
-		{
-			"timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
-			"aggregation": "avg",
-			"upperWarning": 50,
-			"upperSevere": 70
+			"entityIds": "SERVICE-C839DD873CDBD8A7"
 		}
 	]
+
 }
