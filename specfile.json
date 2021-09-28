@@ -4,8 +4,10 @@
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"relativeTime": "hour",
-			"aggregation": "avg",
-			"entityIds": "SERVICE-C839DD873CDBD8A7"
+			"aggregation": "percentile",
+			"entityIds": "SERVICE-C839DD873CDBD8A7",
+			"upperLimit": 1800000,
+			"lowerLimit": 1500000
 		}	
 	]
 

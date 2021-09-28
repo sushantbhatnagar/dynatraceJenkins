@@ -18,7 +18,7 @@ node {
 	}
 	
 	stage('recordDynatraceDeploymentEvent') {
-	recordDynatraceSession(entityIds: [[$class: 'Service', entityId: 'SERVICE-C839DD873CDBD8A7']], envId: 'Dynatrace', testCase: '') {
+	recordDynatraceSession(entityIds: [[$class: 'Service', entityId: 'SERVICE-C839DD873CDBD8A7']], envId: 'Dynatrace', testCase: 'testDynatrace') {
     // some block
 
 	tagMatchRules: [
