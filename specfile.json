@@ -4,7 +4,7 @@
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"tags": "jenkins",
+			"tags": "jenk",
 			"upperLimit": 500000,
 			"lowerLimit": 1000000
 		}	
