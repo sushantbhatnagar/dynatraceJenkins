@@ -3,6 +3,8 @@
 	"timeseries": [{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregationType": "AVG",
+			"startTimestamp": 1632900044684,
+			"endTimestamp": 1632900073433,
 			"relativeTime": "2days",
 			"entities": "SERVICE-65778F58A66834D8",
 			"upperWarning": 5000,
