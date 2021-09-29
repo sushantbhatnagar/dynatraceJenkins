@@ -5,6 +5,7 @@
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
 			"relativeTime": "day",
+			"includeData" :true,
 			"entityIds": "SERVICE-C839DD873CDBD8A7",
 			"upperLimit": 500000,
 			"lowerLimit": 1000000
