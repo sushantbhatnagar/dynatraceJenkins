@@ -12,8 +12,8 @@
 			"timeseriesId": "com.dynatrace.builtin:host.cpu.usage",
 			"aggregation": "avg",
 			"relativeTime": "day",
-			"upperWarning": 33,
-			"upperSevere": 42
+			"upperLimit": 33,
+			"lowerLimit": 42
 		}
 	]
 }
