@@ -3,8 +3,8 @@
 	"timeseries": [{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregationType": "AVG",
-			"startTimestamp": 1632900044684,
-			"endTimestamp": 1632900195384,
+			"startTimestamp": 1632896640000,
+			"endTimestamp": 1632900240000,
 			"relativeTime": "2days",
 			"entities": "SERVICE-C839DD873CDBD8A7",
 			"upperWarning": 5000,
@@ -13,7 +13,9 @@
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregationType": "AVG",
-			"relativeTime": "2days",
+			"startTimestamp": 1632896640000,
+			"endTimestamp": 1632900240000,
+			"relativeTime": "day",
 			"entities": "SERVICE-C839DD873CDBD8A7",
 			"upperWarning": 5000,
 			"upperSevere": 8000
@@ -21,6 +23,18 @@
 		{
 			"timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
 			"aggregationType": "AVG",
+			"startTimestamp": 1632896640000,
+			"endTimestamp": 1632900240000,
+			"relativeTime": "day",
+			"entities": "SERVICE-C839DD873CDBD8A7",
+			"upperWarning": 50,
+			"upperSevere": 70
+		},
+		{
+			"timeseriesId": "com.dynatrace.custom:calc:service.jenkins",
+			"aggregationType": "AVG",
+			"startTimestamp": 1632896640000,
+			"endTimestamp": 1632900240000,
 			"relativeTime": "2days",
 			"entities": "SERVICE-C839DD873CDBD8A7",
 			"upperWarning": 50,
