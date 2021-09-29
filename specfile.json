@@ -1,24 +1,11 @@
 {
 	"spec_version": "2.0",
 	"timeseries": [{
-			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
-			"aggregation": "avg",
-			"tags": "Frontend",
+			"timeseriesId": "com.dynatrace.builtin:service.response.time",
+			"aggregation": "median",
+			"tags": "jenkins",
 			"upperWarning": 5000,
 			"upperSevere": 10000
-		},
-		{
-			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
-			"aggregation": "avg",
-			"entityIds": "SERVICE-65778F58A66834D8",
-			"upperWarning": 5000,
-			"upperSevere": 8000
-		},
-		{
-			"timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
-			"aggregation": "avg",
-			"upperWarning": 50,
-			"upperSevere": 70
 		}
 	]
 }
