@@ -6,7 +6,7 @@
 			"startTimestamp": 1632896640000,
 			"endTimestamp": 1632900240000,
 			"relativeTime": "2days",
-			"entities": "SERVICE-C839DD873CDBD8A7",
+			"entities": "Jenkins v2.303.1",
 			"upperWarning": 5000,
 			"upperSevere": 10000
 		},
@@ -16,7 +16,7 @@
 			"startTimestamp": 1632896640000,
 			"endTimestamp": 1632900240000,
 			"relativeTime": "day",
-			"entities": "SERVICE-C839DD873CDBD8A7",
+			"entities": "Jenkins v2.303.1",
 			"upperWarning": 5000,
 			"upperSevere": 8000
 		},
@@ -26,17 +26,7 @@
 			"startTimestamp": 1632896640000,
 			"endTimestamp": 1632900240000,
 			"relativeTime": "day",
-			"entities": "SERVICE-C839DD873CDBD8A7",
-			"upperWarning": 50,
-			"upperSevere": 70
-		},
-		{
-			"timeseriesId": "custom:calc:service.jenkins",
-			"aggregationType": "AVG",
-			"startTimestamp": 1632896640000,
-			"endTimestamp": 1632900240000,
-			"relativeTime": "2days",
-			"entities": "SERVICE-C839DD873CDBD8A7",
+			"entities": "Jenkins v2.303.1",
 			"upperWarning": 50,
 			"upperSevere": 70
 		}
