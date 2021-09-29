@@ -18,7 +18,7 @@ node {
 	}
 	
 	stage('recordDynatraceDeploymentEvent') {
-	recordDynatraceSession(entityIds: [[$class: 'Service', entityId: 'SERVICE-C839DD873CDBD8A7']], envId: 'Dynatrace', testCase: 'testDynatrace') {
+	recordDynatraceSession(entityIds: [[$class: 'Service', entityId: 'SERVICE-C839DD873CDBD8A7']], envId: 'Dynatrace', testCase: '') {
     // some block
 
 	tagMatchRules: [
@@ -33,6 +33,6 @@ node {
 	}
 	
 	stage('PerformanceSignatureReports') {
-		perfSigDynatraceReports envId: 'Dynatrace', nonFunctionalFailure: 2, specFile: 'specfile.json'
+		perfSigDynatraceReports envId: 'Dynatrace', nonFunctionalFailure: 0, specFile: 'specfile.json'
 	} 
  }

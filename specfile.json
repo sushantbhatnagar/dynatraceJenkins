@@ -1,34 +1,14 @@
 {
-	"spec_version": "2.0",
-	"timeseries": [{
-			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
-			"aggregationType": "AVG",
-			"startTimestamp": 1632896640000,
-			"endTimestamp": 1632900240000,
-			"relativeTime": "2days",
-			"entities": "Jenkins v2.303.1",
-			"upperWarning": 5000,
-			"upperSevere": 10000
-		},
+	"lowerLimit": 1,
+	"upperLimit": 4,
+	"comment": "global configuration environment-wide",
+	"timeseries": [
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
-			"aggregationType": "AVG",
-			"startTimestamp": 1632896640000,
-			"endTimestamp": 1632900240000,
-			"relativeTime": "day",
-			"entities": "Jenkins v2.303.1",
-			"upperWarning": 5000,
-			"upperSevere": 8000
-		},
-		{
-			"timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
-			"aggregationType": "AVG",
-			"startTimestamp": 1632896640000,
-			"endTimestamp": 1632900240000,
-			"relativeTime": "day",
-			"entities": "Jenkins v2.303.1",
-			"upperWarning": 50,
-			"upperSevere": 70
+			"aggregation": "avg",
+			"tags": "jenkins",
+			"lowerLimit": 2.5,
+			"upperLimit": 10
 		}
 	]
 }
