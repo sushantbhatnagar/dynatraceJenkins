@@ -31,7 +31,7 @@
 			"upperSevere": 70
 		},
 		{
-			"timeseriesId": "com.dynatrace.custom:calc:service.jenkins",
+			"timeseriesId": "custom:calc:service.jenkins",
 			"aggregationType": "AVG",
 			"startTimestamp": 1632896640000,
 			"endTimestamp": 1632900240000,
