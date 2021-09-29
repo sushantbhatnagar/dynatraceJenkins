@@ -1,11 +1,28 @@
 {
 	"spec_version": "2.0",
 	"timeseries": [{
-			"timeseriesId": "com.dynatrace.calc:service.jenkins",
-			"entityIds": "SERVICE-C839DD873CDBD8A7",
-			"aggregation": "avg",
-			"upperWarning": 5,
-			"upperSevere": 10
+			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
+			"aggregationType": "AVG",
+			"relativeTime": "2days",
+			"entities": "SERVICE-65778F58A66834D8",
+			"upperWarning": 5000,
+			"upperSevere": 10000
+		},
+		{
+			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
+			"aggregationType": "AVG",
+			"relativeTime": "2days",
+			"entities": "SERVICE-65778F58A66834D8",
+			"upperWarning": 5000,
+			"upperSevere": 8000
+		},
+		{
+			"timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
+			"aggregationType": "AVG",
+			"relativeTime": "2days",
+			"entities": "SERVICE-65778F58A66834D8",
+			"upperWarning": 50,
+			"upperSevere": 70
 		}
 	]
 }
