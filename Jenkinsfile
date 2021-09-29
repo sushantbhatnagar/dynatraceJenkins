@@ -33,6 +33,6 @@ node {
 	}
 	
 	stage('PerformanceSignatureReports') {
-		perfSigDynatraceReports envId: 'Dynatrace', metrics: [[metricId: 'com.dynatrace.builtin:service.responsetime']], nonFunctionalFailure: 0, specFile: ''
+		perfSigDynatraceReports envId: 'Dynatrace Performance Signature', metrics: [[metricId: 'com.dynatrace.builtin:service.server_side_requests'], [metricId: 'com.dynatrace.builtin:pgi.cpu.usage'], [metricId: 'com.dynatrace.builtin:host.cpu.iowait'], [metricId: 'com.dynatrace.builtin:docker.container.cpu'], [metricId: 'com.dynatrace.builtin:docker.container.memory'], [metricId: 'com.dynatrace.builtin:host.cpu.system']], nonFunctionalFailure: 2, specFile: ''
 	} 
  }
