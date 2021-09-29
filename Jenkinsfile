@@ -33,6 +33,6 @@ node {
 	}
 	
 	stage('PerformanceSignatureReports') {
-		perfSigDynatraceReports envId: 'Dynatrace', metrics: [[metricId: 'com.dynatrace.builtin:service.responsetime']], nonFunctionalFailure: 0, specFile: 'specfile.json'
+		perfSigDynatraceReports envId: 'Dynatrace', nonFunctionalFailure: 0, specFile: 'specfile.json'
 	} 
  }
