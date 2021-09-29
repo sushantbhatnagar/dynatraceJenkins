@@ -1,7 +1,6 @@
 {
 	"lowerLimit": 1,
 	"upperLimit": 4,
-	"comment": "global configuration environment-wide",
 	"timeseries": [
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
@@ -11,10 +10,12 @@
 			"upperLimit": 10
 		},
 		{
-			"timeseriesId": "com.dynatrace.builtin:host.mem.used",
+			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"lowerLimit": 3.2,
-			"upperLimit": 4
+			"entityIds": "SERVICE-C839DD873CDBD8A7",
+			"lowerLimit": 2.5,
+			"upperLimit": 10
 		}
+		
 	]
 }
