@@ -1,7 +1,5 @@
 {
-	"spec_version": "2.0",
-	"timeseries": [
-		{
+	"timeseries": [{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
 			"relativeTime": "day",
@@ -16,11 +14,12 @@
 			"entityIds" : "SERVICE-C839DD873CDBD8A7",
 			"lowerLimit" : 250,
 			"upperLimit" : 100
-
+		},		
+		{
+			"timeseriesId": "com.dynatrace.builtin:host.cpu.usage",
+			"aggregation": "avg",
+			"upperWarning": 33,
+			"upperSevere": 42
 		}
-
 	]
-
-
 }
-
