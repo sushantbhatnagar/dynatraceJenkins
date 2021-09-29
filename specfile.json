@@ -9,6 +9,12 @@
 			"tags": "jenkins",
 			"lowerLimit": 2.5,
 			"upperLimit": 10
+		},
+		{
+			"timeseriesId": "com.dynatrace.builtin:host.mem.used",
+			"aggregation": "avg",
+			"lowerLimit": 3.2,
+			"upperLimit": 4
 		}
 	]
 }
