@@ -1,11 +1,11 @@
 {
 	"spec_version": "2.0",
-	"timeseries": {
+	"timeseries": [{
 			"timeseriesId": "com.dynatrace.calc:service.jenkins",
 			"entityIds": "SERVICE-C839DD873CDBD8A7",
 			"aggregation": "avg",
 			"upperWarning": 5,
 			"upperSevere": 10
 		}
-	
+	]
 }
