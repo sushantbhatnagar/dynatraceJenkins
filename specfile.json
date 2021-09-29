@@ -11,6 +11,7 @@
 		{
 			"timeseriesId": "com.dynatrace.builtin.service.server_side_requests",
 			"aggregation" : "count",
+			"relativeTime": "day",
 			"entityIds" : "SERVICE-C839DD873CDBD8A7",
 			"lowerLimit" : 250,
 			"upperLimit" : 100
@@ -18,6 +19,7 @@
 		{
 			"timeseriesId": "com.dynatrace.builtin:host.cpu.usage",
 			"aggregation": "avg",
+			"relativeTime": "day",
 			"upperWarning": 33,
 			"upperSevere": 42
 		}
