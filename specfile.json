@@ -3,16 +3,9 @@
 	"upperLimit": 4,
 	"timeseries": [
 		{
-			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
+			"timeseriesId": "com.dynatrace.builtin:host.cpu.system",
 			"aggregation": "avg",
-			"tags": "jenkins",
-			"lowerLimit": 2.5,
-			"upperLimit": 10
-		},
-		{
-			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
-			"aggregation": "avg",
-			"entityIds": "SERVICE-C839DD873CDBD8A7",
+			"entityIds": "HOST",
 			"lowerLimit": 2.5,
 			"upperLimit": 10
 		}
