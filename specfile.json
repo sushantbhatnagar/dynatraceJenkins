@@ -9,7 +9,16 @@
 			"entityIds": "SERVICE-C839DD873CDBD8A7",
 			"upperLimit": 500000,
 			"lowerLimit": 1000000
-		}	
+		},
+		{
+			"timeseriesId": "com.dynatrace.builtin.service.server_side_requests",
+			"aggregation" : "count",
+			"entityIds" : "SERVICE-C839DD873CDBD8A7",
+			"lowerLimit" : 250,
+			"upperLimit" : 100
+
+		}
+
 	]
 
 
